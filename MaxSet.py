@@ -38,6 +38,7 @@ def max_independent_set(nums):
                 arr_back_1.append(arr_back_3[0])
                 arr_back_1.append(this_num)
                 score_back_1 = score_back_3 + this_num
+            continue
 
         if this_num < 0:
             this_score = max(score_back_2, score_back_3)
