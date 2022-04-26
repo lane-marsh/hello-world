@@ -43,6 +43,7 @@ def max_independent_set(nums):
         if this_num < 0:
             this_score = max(score_back_2, score_back_3)
             this_arr = arr_back_2.copy()
+            continue
         elif score_back_2 > score_back_3:
             this_score = score_back_2 + this_num
             this_arr = arr_back_2.copy()
